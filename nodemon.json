@@ -1,0 +1,5 @@
+{
+  "verbose": false,
+  "delay": "0",
+  "ignore": ["*.test.js", "dist/*"]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "lamba-api",
+  "version": "1.0.0",
+  "description": "Lamba REST API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src",
+    "start": "node dist/",
+    "lint": "./node_modules/.bin/eslint . --fix",
+    "build": "npm run lint && babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalasem/lamba-api.git"
+  },
+  "author": "Abdulsamii Ajala <kgasta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalasem/lamba-api/issues"
+  },
+  "homepage": "https://github.com/jalasem/lamba-api#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/plugin-transform-async-to-generator": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "eslint": "^7.12.1",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
