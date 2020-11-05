@@ -88,7 +88,11 @@ npx eslint --init
 - Would you like to install them now with npm? Choose `Yes`
 *suggestions above can be modified based on your speicfic project need*
 
-- Create `.eslintignore` file
+- Create `.eslintignore` file and exclude `dist` folder like so
+```
+dist/**
+```
+Finally let's create `nodemon.json`
 ```JSON
 {
   "verbose": false,
